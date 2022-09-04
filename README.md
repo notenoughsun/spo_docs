@@ -1,2 +1,2 @@
 # spo_docs
-docs for mobile robotic grant
+docs for mobile robotic project
