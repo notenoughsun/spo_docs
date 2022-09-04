@@ -1,0 +1,46 @@
+
+== metrics to test
+
+.testing and configuring for different system parameters
+* frame rate at which to acquire data
+* the frequency of the IMU’s and its integration
+* the image resolution
+* exposure time
+
+
+The testing conditions for localization - параметры для тестирования системы навигации -
+
+* движение со смартфоном в руках
+* низкая динамика движения - при соответствующем времени экспозиции и частоте сканирования - гарантия качественной съемки
+* выбор среды с наличием объектов для привязки - текстуры, предметы
+* отсутствие визуально шумного окружения - большого количества людей / движузихся объектов в зоне съемки
+ 
+
+
+// will be a handheld smartphone under human-like walking, orientation limited to looking-forward views, with low dynamic, stable grip of the device (this is equivalent to low blurring) and pointing to textured regions when possible (textureless areas such as a narrow view to a flat wall would of course provide a poor solution).
+
+параметры системы  реальные
+оценочные параметры
+
+== FOMS stated
+
+
+* image acquisition freq | 1Hz +
+
+
+
+| 1.1                                	| T-T+3 (w navig)     	| 
+
+Smartphone on-board sensors API and a sandbox application for solving the data acquisition. 
+
+Data: Images and IMU. 
+
+Requirements include testing and configuring for different parameters such as the frame rate at which to acquire data, the frequency of the IMU’s and its integration, the image resolution, exposure time. 
+Time stamps need to be from the same timing authority. 
+
+Application specifications: 1Hz or more for image acquisition and processing IMU acquisition from smartphone API, frequency 50Hz or more and IMU pose integration 20Hz or more. Recording of data for the first prototype, for later processing. // API бортовых датчиков смартфона и приложение-песочница для решения задачи сбора данных. Данные: Изображения и IMU. Требования включают тестирование и настройку для различных параметров, таких как частота кадров, с которой нужно получать данные, частота IMU и их интеграция, разрешение изображения, время экспозиции. Временные метки должны быть получены от одного и того же органа синхронизации. Технические характеристики применения: 1 Гц или более для получения и обработки изображений Получение IMU из API смартфона, частота 50 Гц или более и интеграция позы IMU 20 Гц или более. Запись данных для первого прототипа, для последующей обработки. 	|   	| Application in android: reading low level data from smartphone sensors IMU and RGB from the Android API, creates an output image and reserves some space for later code (cpp) the neural localizer. This deliverable is from Navigine. // Приложение на android, считывающее низкоуровневые данные с датчиков смартфона IMU и RGB из Android API, создающее выходное изображение и резервирующее место для последующего кода (cpp) нейронного локализатора. Этот продукт разработан компанией Navigine.  	|
+
+
+| 1.2                                	| T-T+3               	| 
+
+Mapping Data acquisition and system preparation from the Mapping platform. We will integrate the sensor network to provide up to 1ms time synchronization of the smartphone video and the depth camera Collect the data in the two proposed environments. // Картографирование Сбор данных и подготовка системы с платформы картографии. Мы интегрируем сеть датчиков для обеспечения временной синхронизации видео со смартфона и камеры глубины до 1 мс. Сбор данных в двух предложенных средах.                                                                                                                            
