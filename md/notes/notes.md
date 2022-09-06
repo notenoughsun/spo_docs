@@ -12,7 +12,6 @@
 
 камеры, технология сбора данных, про сами карты, масштабирование системы
 
-
 ### масштабирование системы
 
 архитектура интеллектуальной платформы навигации
@@ -55,11 +54,11 @@
 
 $$
 \begin{align}
-l_{side} = \sqrt{s_{area}} \\ 
-n_{routes} = l_{side} / d_{discretisation} \\
-l_{cover} = l_{side} \cdot n_{routes} \cdot n_{repeates}  \\ 
-size_{all video} = l_{cover} / \frac{[v_{avg}]{m/s}}{60} \cdot [\rho] {Gb / min} \\
-= \frac{s_{area}[m^2] \cdot n_{repeates}[{\frac{1}{m}}]}{d_{discretisation}[{m}]} / \frac{v_{avg}[{m/s}]}{60} \cdot \rho [{Gb / min}]
+l_{side} &= \sqrt{s_{area}} \\ 
+n_{routes} &= l_{side} / d_{discretisation} \\
+l_{cover} &= l_{side} \cdot n_{routes} \cdot n_{repeates}  \\ 
+size_{all video} &= l_{cover} / \frac{[v_{avg}]{m/s}}{60} \cdot [\rho] {Gb / min} \\
+&= \frac{s_{area}[m^2] \cdot n_{repeates}[{\frac{1}{m}}]}{d_{discretisation}[{m}]} / \frac{v_{avg}[{m/s}]}{60} \cdot \rho [{Gb / min}]
 \end{align}
 $$
 
@@ -74,10 +73,10 @@ ${discretisation} = 10 m$ Получится определенная длина
 
 $$
 \begin{align}
-l = \frac{2000 [m^2] \cdot 2.5[{\frac{1}{m}}]}{10 [{m}]} = 500[m] \\
-v = 3 \cdot 60 = 180[m/min] \\
-t =  500[m] / 180[m/min] = 2.8 [min] \\
-S = \cdot 1.4 [GB / min] \cdot 2.8 [min] = 3.92 GB
+l &= \frac{2000 [m^2] \cdot 2.5[{\frac{1}{m}}]}{10 [{m}]} = 500[m] \\
+v &= 3 \cdot 60 = 180[m/min] \\
+t &=  500[m] / 180[m/min] = 2.8 [min] \\
+S &= \cdot 1.4 [GB / min] \cdot 2.8 [min] = 3.92 GB
 \end{align}
 $$
 
@@ -87,7 +86,7 @@ $$
 
 $$
 \begin{align}
-rate_{vid} = {1.4[GB / h] / 60} [Gb / m] = 0.023 Gb / m
-size = rate_{vid} \cdot 
+rate_{vid} &= {1.4[GB / h] / 60} [Gb / m] = 0.023 Gb / m
+size &= rate_{vid} \cdot 
 \end{align}
 $$
